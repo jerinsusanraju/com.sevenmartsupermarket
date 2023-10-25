@@ -25,8 +25,7 @@ public class ManageLocationTest extends Base{
 		manageLocationPage.openManageLocationPage();
 		boolean textMatches =manageLocationPage.ListLocationsPageHeadingText();
 		Assert.assertTrue(textMatches);
-	}
-	
+	}	
 	
 	public void verifyAddNewLocation() {
 		manageLocationPage= new ManageLocationPage(driver);

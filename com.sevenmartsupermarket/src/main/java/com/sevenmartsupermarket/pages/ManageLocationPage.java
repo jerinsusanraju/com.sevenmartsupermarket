@@ -38,9 +38,7 @@ public class ManageLocationPage {
 
 	public void openManageLocationPage() {
 		LoginPage loginPage = new LoginPage(driver);
-		String userName = null;
-		String password = null;
-		loginPage.login(userName, password);
+		loginPage.login();
 		manageLocation.click();
 	}
 

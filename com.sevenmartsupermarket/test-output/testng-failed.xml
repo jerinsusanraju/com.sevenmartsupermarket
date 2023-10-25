@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sevenmartsupermarket.tests.LoginTest">
+      <class name="com.sevenmartsupermarket.tests.HomeTest">
         <methods>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>
-          <include name="verifyLogin"/>
+          <include name="verifyCardTitle"/>
           <include name="terminateSession"/>
         </methods>
-      </class> <!-- com.sevenmartsupermarket.tests.LoginTest -->
+      </class> <!-- com.sevenmartsupermarket.tests.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

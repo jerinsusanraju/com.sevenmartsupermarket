@@ -67,9 +67,7 @@ public class ManageDeliveryBoyPage {
 	
 	public void openDeliveryBoyPage() {
 		LoginPage loginPage = new LoginPage(driver);
-		String userName=null;
-		String password=null;
-		loginPage.login(userName, password);
+		loginPage.login();
 		clickOnDeliveryBoyLink();
 	}
 

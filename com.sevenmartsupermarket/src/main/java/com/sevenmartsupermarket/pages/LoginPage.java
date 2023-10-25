@@ -51,24 +51,18 @@ public class LoginPage {
 	public void clickOnSignInButton() {
 		sign_in_button.click();
 	}
-
-	// public void login() {
-	// String userName = properties.getProperty("username");
-//		String password = properties.getProperty("password");
-	// enterUserName(userName);
-//		enterPassword(password);
-	// clickOnSignInButton();
-	// login(userName, password);
-
-	// }
-
-	public void login(String userName, String password) {
-		userName = properties.getProperty("username");
-		password = properties.getProperty("password");
+	public void login() {
+		String userName = properties.getProperty("username");
+		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSignInButton();
+	}
 
+	public void login(String userName, String password) {
+		enterUserName(userName);
+		enterPassword(password);
+		clickOnSignInButton();
 	}
 
 }
