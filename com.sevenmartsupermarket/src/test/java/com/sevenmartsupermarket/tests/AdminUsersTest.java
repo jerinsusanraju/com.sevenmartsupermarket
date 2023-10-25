@@ -7,16 +7,18 @@ import com.sevenmartsupermarket.base.Base;
 import com.sevenmartsupermarket.listeners.RetryAnalyzer;
 import com.sevenmartsupermarket.pages.AdminUsersPage;
 import com.sevenmartsupermarket.pages.LoginPage;
+import com.sevenmartsupermarket.utilities.GeneralUtility;
 
 public class AdminUsersTest extends Base {
 	//LoginPage loginPage;
 	AdminUsersPage adminUsersPage;
 
+
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void verifyCreateNewUser() {
 		adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.openAdminUsersPage();
-		String newUserName = null;
+		String newUserName = GeneralUtility.getFirstName();
 		String newUserPassword = null;
 		String newUserType = null;
 		adminUsersPage.createNewUser(newUserName, newUserPassword, newUserType);

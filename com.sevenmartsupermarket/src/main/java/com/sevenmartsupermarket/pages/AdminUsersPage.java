@@ -74,8 +74,6 @@ public class AdminUsersPage {
 	}
 
 	public void enterUserName(String newUserName) {
-		newUserName = GeneralUtility.getFirstName();
-		System.out.println(newUserName);
 		usernameField.sendKeys(newUserName);
 	}
 
@@ -91,10 +89,14 @@ public class AdminUsersPage {
 	public void clickOnSave() {
 		saveField.click();
 	}
-
+/***
+ * This method is for new user creation	
+ * @param newUserName
+ * @param newUserPassword
+ * @param newUserType
+ */
 	public void createNewUser(String newUserName, String newUserPassword, String newUserType) {
-		newUserPassword = properties.getProperty("newuserpassword");
-		newUserType = properties.getProperty("newusertype");
+		
 		clickOnNewButton();
 		enterUserName(newUserName);
 		enterPassword(newUserPassword);
