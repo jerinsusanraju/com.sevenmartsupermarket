@@ -63,6 +63,7 @@ public class LoginPage {
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSignInButton();
+		System.out.println("Changes");
 	}
 
 }
